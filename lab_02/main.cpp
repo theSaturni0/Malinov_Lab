@@ -33,22 +33,24 @@ int main() {
     ---
 
     Префиксный инкремент:
-    a++
-    Постфиксный инкремент:
     ++a
+    Постфиксный инкремент:
+    a++
 
     Префиксный декремент:
-    a--
-    Постфиксный декремент:
     --a
+    Постфиксный декремент:
+    a--
 
     ---
 
     Приоритет операторов: 
     
     ()
+    ++ -- (Префиксный)
     * / %
     + -
+    ++ -- (Постфиксный) (Почти)
 
     ---
     
@@ -99,6 +101,8 @@ int main() {
 
     std::cout << "\nCalculating volume of the pyramid" << std::endl;
 
+    // ввод площади
+
     std::cout << "\nEnter the base area of the pyramid (0<S<100):" << std::endl;
     std::cin >> space;
 
@@ -109,6 +113,8 @@ int main() {
     else {
         valid = false;
     }
+
+    // ввод высоты
 
     std::cout << "\nEnter the height of the pyramid (0<h<100):" << std::endl;
     std::cin >> height;
@@ -121,6 +127,7 @@ int main() {
         valid = false;
     }
 
+    // вычисление объема
 
     if(valid) {
         volume = (space*height)/3.0;
