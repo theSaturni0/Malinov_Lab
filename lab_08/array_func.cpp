@@ -3,12 +3,19 @@
 #include <fstream>
 #include <iostream>
 
+
 using namespace saturnLib;
 using namespace std;
 
 namespace saturnLib {
     vector<int> saturnLib::inputData(const std::string& file) {
         ifstream inputFile(file);
+
+        if (!inputFile.is_open()) {
+            cout << "err input";
+            return vector<int>();
+        }
+
         string line;
         getline(inputFile, line);
         inputFile.close();
@@ -52,6 +59,11 @@ namespace saturnLib {
 
     void saturnLib::outputData(const std::string& filename, vector<int>& arr, int evenSum, int oddSum) {
         std::ofstream outputFile(filename);
+
+        if (!outputFile.is_open()) {
+            cout << "err output";
+            return;
+        }
 
         outputFile << "Простые числа: ";
         vector<int> primeNum = primeNumbersArray(arr);
