@@ -1,0 +1,10 @@
+^D:\GIT\MALINOV_LAB\LAB_12\BUILD\CMAKEFILES\24E45D56A5080C22BAADAE117A4A750A\GENERATE.STAMP.RULE
+setlocal
+D:\Programs\CMake\bin\cmake.exe -SD:/Git/Malinov_Lab/lab_12 -BD:/Git/Malinov_Lab/lab_12/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Git/Malinov_Lab/lab_12/build/lab_07.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
