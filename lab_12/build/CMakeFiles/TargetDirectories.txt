@@ -1,3 +1,0 @@
-D:/Git/Malinov_Lab/lab_12/build/CMakeFiles/lab_07.dir
-D:/Git/Malinov_Lab/lab_12/build/CMakeFiles/ALL_BUILD.dir
-D:/Git/Malinov_Lab/lab_12/build/CMakeFiles/ZERO_CHECK.dir
